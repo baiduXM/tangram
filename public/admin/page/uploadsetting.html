@@ -1,0 +1,89 @@
+<style type="text/css">
+    #upload_setting form{
+        width: 100%;
+    }
+    #upload_setting li{
+        margin:5px;
+    }
+    #upload_setting button{
+        float: left;
+        margin: 10px;
+    }
+    #upload_setting button span{
+        margin: 15px;
+    }
+    #upload_img_test .img-add-button{
+        width:100px;
+        height:100px;
+        display: inline;
+    }
+    #upload_img_test .img-add-button input{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            filter:alpha(opacity=0); 
+            -moz-opacity:0; 
+            opacity:0;
+            display: inline;
+    }
+    #upload_img_test .img-add-button i{
+        font-size:80px;
+        margin:5px;
+        position: absolute;
+    }
+</style>
+<div class="panel panel-primary"  id="upload_setting">
+    <div class="panel-heading">上传设置<small>(Upload Setting)</small></div>
+    <div class="panel-body">
+        <form class="navbar-form navbar-left">
+            <div class="form-group">
+                <ul class="nav">
+                    <li>
+                        <label>图片上传路径： </label><input type="text" class="form-control imgdir" />
+                    </li>
+                    <li>
+                        <label>图片最大/kb： </label><input type="text" class="form-control imgmaxsize" />
+                    </li>
+                    <li>
+                        <label>文件上传路径： </label><input type="text" class="form-control filedir" />
+                    </li>
+                    <li>
+                        <label>文件最大/kb： </label><input type="text" class="form-control filemaxsize" />
+                    </li>
+                </ul>
+            </div>
+        </form>
+        <button class="btn btn-primary save"> <span>保 存</span> </button><button class="btn btn-primary cancel">  <span>取 消</span> </button>
+    </div>
+</div>
+<div class="panel panel-primary"  id="upload_img_test">
+    <div class="panel-heading">上传图片测试<small>(Upload image test)</small></div>
+    <div class="panel-body">
+        <form class="navbar-form">
+            <div class="form-group">
+                <ul class="nav">
+                    <li>
+                        <label>图片上传路径： </label><div class="img-add-button"><i class="fa fa-image"></i><input type="file" class="imgtest"  accept="image/jpeg,image/png"/></div>
+                    </li>
+                </ul>
+            </div>
+        </form>
+        <button class="btn btn-primary sumbit" style="display: inline;"> <span>提 交</span> </button>
+    </div>
+</div>
+<div class="panel panel-primary"  id="upload_file_test">
+    <div class="panel-heading">上传文件测试<small>(Upload file test)</small></div>
+    <div class="panel-body">
+        <form class="navbar-form navbar-left">
+            <div class="form-group">
+                <ul class="nav">
+                    <li>
+                        <label>文件上传路径： </label><input type="file" class="form-control filetest" />
+                    </li>
+                </ul>
+            </div>
+        </form>
+        <button class="btn btn-primary sumbit"> <span>提 交</span> </button>
+    </div>
+</div>
+

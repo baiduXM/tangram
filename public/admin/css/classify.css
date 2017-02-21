@@ -1,0 +1,67 @@
+.img-add-button{
+    width:100px;
+    height:100px;
+    display: inline;
+}
+.img-add-button input{
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    filter:alpha(opacity=0); 
+    -moz-opacity:0; 
+    opacity:0;
+    display: inline;
+}
+.img-add-button i{
+    font-size:56px;
+    margin:5px;
+    position: absolute;
+    color:#337AB7;
+}
+#classify_manager .classify_deep_2_div{
+    font-weight: bold;
+    color:#337AB7;
+    width:10%;
+    float: left;
+}
+#classify_manager .classify_deep_3_div{
+    font-weight: bold;
+    color:#337AB7;
+    width:20%;
+    float: left;
+}
+.imgpre{
+    width:100px;
+    height:56px;
+}
+#content{
+    width:700px;
+    height:400px;
+    display:inline;
+}
+/*.meta_description{
+    width: 530px;
+}*/
+#classify_list .classify_deep_1{
+    width:100%;
+}
+#classify_list .classify_deep_2{
+    width:90%;
+}
+#classify_list .classify_deep_3{
+    width:80%;
+}
+#classify_list .classify_name,#classify_list .classify_sort{
+    border: 0px; 
+    border-radius: 5px;
+}
+.classify-info .meta_description{
+    width:600px;
+    height: 65px;
+    resize: none;
+}
+.classify-info .imgpre{
+    background-image: url(../images/img-back.jpg);
+    background-size: 100%;
+    background-repeat: repeat;
+}

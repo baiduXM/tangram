@@ -1,0 +1,18 @@
+#page_setting .add_classify{
+    color: #337ab7;
+    font-size: 18px;
+    margin: 5px;
+}
+#page_setting .add_classify:hover{
+    color: #9a9b9c;
+    cursor: pointer;
+}
+#page_setting .del_classify{
+    color: red;
+    font-size: 18px;
+    margin: 5px;
+}
+#page_setting .del_classify:hover{
+    color: #9a9b9c;
+    cursor: pointer;
+}

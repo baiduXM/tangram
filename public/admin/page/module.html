@@ -1,0 +1,112 @@
+<style>
+    .upgrade_module_panel button{
+        min-width: 100px;
+        margin: 5px;
+    }
+    .upgrade_module_panel li{
+        margin: 5px;
+        box-shadow: 0px 0px 5px #a4a4a4;
+        padding: 20px;   
+        border: 1px solid #d4d4d4;
+        border-radius: 8px;
+    }
+    .upgrade_module_panel .display_example{
+        display: inline-block;
+        border: 1px solid #ded7d7;
+        padding: 30px;
+        border-radius: 8px;
+    }
+    .upgrade_module_panel .top_align{
+        display: inline-block;
+        vertical-align: top;
+        margin-left:5px;
+    }
+    .upgrade_module_panel .p_name_div,.upgrade_module_panel .file_div,.upgrade_module_panel .routes_div{
+        margin-bottom: 5px;
+    }
+    .upgrade_module_panel .del_i{
+        font-size: 25px;
+        color: red;
+        margin: 5px;
+        vertical-align: middle;
+    }
+    .upgrade_module_panel .del_i:hover{
+        color: #8e8989;
+        cursor: pointer;
+    }
+    .upgrade_module_panel .del_div{
+        float: right;
+        margin-top: -37px;
+        margin-right: -29px;
+    }
+    .upgrade_module_panel .add_i,.module_list .add_i{
+        font-size: 25px;
+        color: #337ab7;
+        margin: 5px;
+        vertical-align: middle;
+    }
+    .upgrade_module_panel .add_i:hover,.module_list .add_i:hover{
+        color: #8e8989;
+        cursor: pointer;
+    }
+    .upgrade_module_panel .router_div,.upgrade_module_panel .json_div,.upgrade_module_panel .files_div{
+        width: 80%;
+        border: 1px solid #d4d4d4;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0px 0px 5px #605f5f;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+</style>
+<div class="module_list">
+    <div class="page-header">
+        <h1>模块功能<small>(Module)</small></h1>
+    </div>
+    <ul class="nav nav-tabs" id="edit_module">
+        <li class="active" data-id="read_module" ><a href="javascript:void(0);">查看模块</a></li>
+        <li data-id="add_module"><a href="javascript:void(0);">添加模块</a></li>
+    </ul>
+    <div class="panel panel-default" id="module_info">
+        <div class="panel-body"  id="read_module">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>模块名</th>
+                        <th>模块描述</th>
+                        <th class="text-center">模块关联</th>
+                        <th class="text-center">是否可用</th>
+                        <th class="text-center">是否启用</th>
+                        <th class="text-center">操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <div><span class="add_i create_module"><i class="fa fa-plus-circle"></i></span></div>
+        </div>
+        <div class="panel-body" id="add_module" style="display: none;">
+            <form class="navbar-form navbar-left">
+                <div class="form-group">
+                    <input type="file" class="form-control" id="module_file">
+                </div>
+                <button type="submit" id="add_submit" class="btn btn-primary">添加模块</button>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="upgrade_module_panel" style="display: none;">
+    <div class="panel panel-primary">
+        <div class="panel-heading">升级<small>(Upgrade Module)</small></div>
+        <div class="panel-body" id="upgrade-module">
+            <form class="navbar-form navbar-left" style="width:100%;">
+                <div class="form-group" style="width:100%;">
+                    <ul  class="nav upgrade_module_ul">
+                    </ul>
+                </div>
+                <div class="text-center"><button class="btn btn-primary save" disabled onclick="save_upgrad($(this));"> 保 存</button><button class="btn btn-primary cancel">  <span>取 消</span></div>
+            </form>
+        </div>
+    </div>
+</div>
+

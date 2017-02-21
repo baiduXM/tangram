@@ -1,0 +1,72 @@
+<button class="btn btn-primary add_setting_classify"><i class="fa fa-plus"></i> 添加栏目显示</button>
+<div class="panel panel-primary setting-classify" style="display: none;">
+    <div class="panel-heading">栏目显示设置<small>(Classify Setting)</small><div class="cancel" style="float:right;"><i class="fa fa-lg fa-close"></i></div></div>
+    <div class="panel-body" id="classify_setting_list">
+        <form class="navbar-form navbar-left setting_cate_form" style="width:100%;">
+            <div class="form-group" style="width:100%;">
+                <ul class="nav" style="width:100%;" >
+                    <li><label>数据别名 : </label> <input type="text" class="form-control datatitle" placeholder="请设置数据别名"/></li>
+                    <li><label>数据命名 : </label> <input type="text" class="form-control dataname" placeholder="请设置名称与模板一致"/></li>
+                    <li><label>类型限制 : </label> 
+                        <select class="form-control type">
+                            <option value="list">列表</option>
+                            <option value="page">文章</option>
+                            <option value="classifys">栏目多选</option>
+                        </select>
+                    </li>
+                    <li class="pagename_li"><label>页面 : </label> </li>
+                    <li class="regular_li" style="display: none;"><label>规则 : </label>  <textarea class="form-control regular" style="width:80%;"></textarea>
+                        <br />&nbsp;&nbsp;&nbsp;&nbsp;<label>使用勾选 : </label> <input type="checkbox" class="top_classify"  value="2"/>顶级栏目 <input type="checkbox" class="list_classify"  value="3"/>列表栏目</li>
+                    <li><label>提示语 : </label><textarea class="form-control promptword"></textarea></li>
+                    <li class="getcontent_li"><label>提取内容 : </label> <input type="checkbox"  value="title"/>title <input type="checkbox" value="link"/>link <input type="checkbox" value="img"/>img <input type="checkbox" value="children"/>children </li>
+                </ul>
+                <div class="text-center"><button class="btn btn-primary save"> 保 存</button><button class="btn btn-primary cancel"> 取 消</button></div>
+            </div>
+        </form>
+    </div>
+    <span style="display: inline-block;color: red;">规则写法:(例:v['type']==1 && v['pc_show']==1,v1['type']==2 || v1['pc_show']==0,v2['type']==2 || v2['pc_show']==0)不可使用双引号",以逗号为分割，栏目深度1,2,3;深度1的变量是v,2是v1,3是v2;v['type']为type字段.参考代码位置在/public/admin/page/js/include_js/home_classify.js中的function gethtml_classifys()。</span>
+</div>
+<script>
+    $(".setting-classify .type").change(function(){
+        var v=$(this).val();
+        if(v=="classifys"){
+            $(".setting-classify .regular_li").show();
+        }else{
+            $(".setting-classify .regular_li").hide();
+        }
+    });
+    $(".setting .add_setting_classify").click(function() {
+        $(".setting .panel").hide();
+        $(".setting .setting-classify").show();
+    });
+    $(".regular_li input[type=checkbox]").click(function() {
+        var v = [], v1 = [], v2 = [];
+        var num = 0;
+        $(".setting-classify .regular_li input:checked").each(function() {
+            switch ($(this).val()) {
+                case "1":
+                    v[num] = "(v['pc_show']==1)";
+                    v1[num] = "(v1['pc_show']==1)";
+                    v2[num] = "(v2['pc_show']==1)";
+                    break;
+                case "2":
+                    v[num] = "(1==1)";
+                    v1[num] = "(0==1)";
+                    v2[num] = "(0==1)";
+                    break;
+                case "3":
+                    v[num] = "(v['type']<4)";
+                    v1[num] = "(v1['type']<4)";
+                    v2[num] = "(v2['type']<4)";
+                    break;
+            }
+            num++
+        });
+        var strs = [];
+        strs["0"] = v.join(" && ");
+        strs["1"] = v1.join(" && ");
+        strs["2"] = v2.join(" && ");
+        var str = strs.join(",");
+        $(".setting-classify .regular").val(str);
+    });
+</script>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=10,chrome=1" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>七巧板</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+        <link href="css/context.css" rel="stylesheet" />
+        <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+        <script  type="text/javascript" src="js/bootstrap.js"></script>
+    </head>
+    <body>
+
+        <div class="context">
+            <div class="single-page">
+                <div class="panel panel-body" style="width: 350px;background: rgba(255, 255, 255, 0.4);filter: alpha(opacity=40);">
+                    <form class="navbar-form navbar-left">
+                        <div class="form-group">
+                            <ul class="nav user-info">
+                                <li><label class="form_note">用户名</label>: <input type="text" id="username" class="username form-control" name="username" placeholder="请输入用户名"/></li>
+                                <li><label class="form_note">密  码</label>: <input type="password" id="password" class="password form-control" name="password" placeholder="请输入密码"/></li>
+                                <li><button type="button" name="login" id="login" class="btn btn-primary" >登录</button><button type="button" name="register" id="register" class="btn btn-primary" >注册</button></li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script  type="text/javascript" src="js/angular/angular.min.js"></script>
+        <script type="text/javascript" src="js/angular/angular-ui-router.js"></script>
+        <script  type="text/javascript" src="js/login.js"></script>
+    </body>
+
+</html>

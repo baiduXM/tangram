@@ -1,0 +1,15 @@
+数据库配置：/config/database.php
+数据库自行载入：tangram2.sql
+后台登录路径：主域名/admin/login.html
+后台登录账号：test
+后台登录密码: test
+系统后台php使用的是lavaral5.2框架，请参考http://laravelacademy.org/post/3162.html
+后台界面路径：/public/admin/
+前台界面查看路由
+路由位置：/app/Http/routes.php
+后台界面框架：angularjs框架
+后台界面路由：/public/admin/json/router.json
+后台界面主文件(angular框架入口文件):/public/admin/js/app.js
+后台界面顶部菜单栏显示内容:/public/admin/json/top_sidebar.json
+后台界面左边菜单栏显示内容:/public/admin/json/left_sidebar.json
+其他的只能你自己看咯！！！

@@ -1,0 +1,19 @@
+{
+    "default": [{
+            "name": " {{username}} ",
+            "url": "javascript:void(0)",
+            "en_name": "username",
+            "icon": "fa-user",
+            "childmenu": [{
+                    "name": " Clear Cache",
+                    "en_name": " Clear_Cache",
+                    "url": "/clearcache",
+                    "icon": "fa-refresh"
+                }, {
+                    "name": " Log Out",
+                    "en_name": " Log_Out",
+                    "url": "/logout",
+                    "icon": "fa-power-off"
+                }]
+        }]
+}

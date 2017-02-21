@@ -1,0 +1,60 @@
+{if $pagenavs}
+<nav>
+	<div class="alefttitle">{$posnavs[0].en_name} / <span>{$posnavs[0].name}</span></div>	<!-- 下表为0的面包屑导航正好是一级栏目的当前栏目 -->
+    <div class="category">
+	<ul class="listbg clearfix">
+		{foreach name=pagenavs item=nav from=$pagenavs}
+		<li class="{if $nav.current}current{/if}">
+			<a href="{if $nav.childmenu}javascript:;{else}{$nav.link}{/if}" class="h_top {if $nav.selected}selected{/if}">{$nav.name}</a>
+            {if $nav.childmenu}
+			<ul class="second clearfix">
+				{foreach key=key item=nav_list from=$nav.childmenu}                
+				<li class="{if $nav_list.current}current{/if}"><a href="{if $nav_list.childmenu}javascript:;{else}{$nav_list.link}{/if}" class="h_topa {if $nav_list.selected}selected{/if}"> {$nav_list.name}</a>
+                    {if $nav_list.childmenu}
+                    <ul class="third clearfix">
+                        {foreach key=key item=nav_listsec from=$nav_list.childmenu}
+                        <li class="{if $nav_listsec.current}current{/if}"><a href="{$nav_listsec.link}" class="{if $nav_listsec.selected}selected{/if}">{$nav_listsec.name}</a></li>
+                        {/foreach}
+                    </ul>
+                    {/if} 
+                </li>                 
+				{/foreach}
+			</ul>
+			{/if}            
+		</li>
+		{/foreach}
+	</ul>
+    </div>
+</nav>
+        
+        
+{else}	<!-- 让客服自己选择，如果当前无子栏目 展现的目标栏目 -->
+<nav>
+	<div class="alefttitle">{$_pagenavs_sub3.pagenavs.en_name}/ <span>{$_pagenavs_sub3.pagenavs.name}</span></div>	
+     <div class="category">
+	<ul class="listbg clearfix">
+		{foreach name=pagenavs2 item=nav from=$_pagenavs_sub3.pagenavs.childmenu}
+		<li class="{if $nav.current}current{/if}">
+			<a href="{if $nav.childmenu}javascript:;{else}{$nav.link}{/if}">{$nav.name}</a>
+			{if $nav.childmenu}
+			<ul class="second clearfix">
+				{foreach key=key item=nav_list from=$nav.childmenu}
+				<li class="{if $nav_list.current}current{/if}"><a href="{if $nav_list.childmenu}javascript:;{else}{$nav_list.link}{/if}">{$nav_list.name}</a>
+                    {if $nav_list.childmenu}
+                    <ul class="third clearfix">
+                        {foreach key=key item=nav_listsec from=$nav_list.childmenu}
+                        <li class="{if $nav_listsec.current}current{/if}"><a href="{$nav_listsec.link}">{$nav_listsec.name}</a></li>
+                        {/foreach}
+                    </ul>
+                    {/if}                 
+                </li>
+				{/foreach}
+			</ul>
+			{/if}
+		</li>
+		{/foreach}
+	</ul>
+    </div>
+</nav>
+
+{/if}

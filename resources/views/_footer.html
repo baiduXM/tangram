@@ -1,0 +1,8 @@
+<div id="footer_bg">
+    <div id="footer" class="wrapper">
+        <a href="{$site_url}">首页</a> | {foreach name=foot_navs item=nav from=$foot_navs}
+        <a href="{$nav.link}">{$nav.name}</a> | {/foreach}
+        <br /> {$footprint} 
+    </div>
+</div>
+{$footscript}

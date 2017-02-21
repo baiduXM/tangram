@@ -1,0 +1,103 @@
+#article_edit ul li{
+    margin: 5px;
+}
+.img-add-button{
+    width:100px;
+    height:100px;
+    display: inline;
+}
+.img-add-button input{
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    filter:alpha(opacity=0); 
+    -moz-opacity:0; 
+    opacity:0;
+    display: inline;
+}
+.img-add-button i{
+    font-size:56px;
+    margin:5px;
+    color: #337AB7;
+    position: absolute;
+}
+#article_edit label{
+    max-width: 20%;
+}
+#article_edit .title,#article_edit .txts{
+    width: 80%;
+}
+#article_edit .imgpre{
+    width:100px;
+    height:56px;
+    margin-right: -10px;
+    margin-left: 10px;
+}
+#article_edit .imgclose{
+    height:100%;
+    font-size: 20px;
+    position: relative;
+    color: red;
+    top: -23px;
+}
+#article_edit  .switch_botton:focus{
+    box-shadow: 0px;
+}
+#article_edit .switch_input{
+    width: 70px;
+    height: 30px;
+    border-radius: 15px;
+    background: #efefef;
+    border: 0px;
+    box-shadow: 2px 2px 2px #898989 inset;
+}
+#article_edit .switch_botton{
+    width:35px;
+    height:35px;
+    border-radius: 20px;
+    border: 2px solid #B4B3B3;
+    position: relative;
+    left:-70px;
+    bottom: -13px;
+    display:inline-block;
+    background-color: rgb(232, 232, 232);
+}
+#article_edit #article_content{
+    width:80%;
+    height:400px;
+    display:inline;
+    float: left;
+}
+#article_edit .article_bottom{
+    width: 100%;
+    margin: 10px;
+}
+#article_edit .article_bottom button{
+    margin: 10px;
+    width: 80px;
+}
+.batch_del_article,.add_article{
+    margin-bottom:10px;
+}
+#article_list .sort{
+    border: 0px;
+    width: 30px;
+    border-radius: 5px;
+}
+#article_list .title{
+    border: 0px;
+    width: 100%;
+    border-radius: 5px;
+}
+#article_list .is_star,#article_list .is_top,#article_list .show{
+    color: #337AB7;
+}
+#article_list .noshow{
+    color:#898989;
+}
+#article_edit .article_close:hover{
+    font-size: 20px;
+    /*    color:#B4DAFA;
+        filter: alpha(opacity=60);
+        opacity: .6;*/
+}

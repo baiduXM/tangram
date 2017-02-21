@@ -1,0 +1,13 @@
+{
+    "default": {
+        "imgs": "\u591a\u56fe",
+        "img": "\u5355\u56fe",
+        "text": "\u6587\u672c\u77ed\u8f93\u5165",
+        "textarea": "\u6587\u672c\u957f\u8f93\u5165"
+    },
+    "Classify": {
+        "list": "\u5217\u8868",
+        "page": "\u5355\u9875",
+        "classifys": "\u591a\u680f\u76ee\u9009\u62e9"
+    }
+}

@@ -1,0 +1,217 @@
+<pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=10)</i>
+  'navs' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=3)</i>
+      0 <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=23)</i>
+          'id' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+          'name' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'音乐列表'</font> <i>(length=12)</i>
+          'en_name' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'music'</font> <i>(length=5)</i>
+          'img' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/resources/images/1478510258n55M.jpg'</font> <i>(length=36)</i>
+          'icon' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'icon-sanyuan'</font> <i>(length=12)</i>
+          'meta_keywords' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'音乐'</font> <i>(length=6)</i>
+          'meta_description' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'音乐列表'</font> <i>(length=12)</i>
+          'sort' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+          'type' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+          'article_type' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+          'page_id' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+          'pc_show' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+          'mobile_show' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+          'wechat_show' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+          'url' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>''</font> <i>(length=0)</i>
+          'p_id' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+          'created_at' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'2016-11-07 09:14:54'</font> <i>(length=19)</i>
+          'updated_at' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'2016-11-07 09:17:43'</font> <i>(length=19)</i>
+          'footer_show' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+          'form_id' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+          'open_page' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+          'link' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/classify/1.html'</font> <i>(length=16)</i>
+          'childmenu' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=2)</i>
+              ...
+      1 <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=23)</i>
+          'id' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>5</font>
+          'name' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'关于我们'</font> <i>(length=12)</i>
+          'en_name' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'g'</font> <i>(length=1)</i>
+          'img' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/resources/images/1478510919vn7m.jpg'</font> <i>(length=36)</i>
+          'icon' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'icon-wenzhang'</font> <i>(length=13)</i>
+          'meta_keywords' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'关于我们'</font> <i>(length=12)</i>
+          'meta_description' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'美若黎明——李健'</font> <i>(length=24)</i>
+          'sort' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>4</font>
+          'type' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>4</font>
+          'article_type' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+          'page_id' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+          'pc_show' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+          'mobile_show' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+          'wechat_show' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+          'url' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>''</font> <i>(length=0)</i>
+          'p_id' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+          'created_at' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'2016-11-07 09:28:42'</font> <i>(length=19)</i>
+          'updated_at' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'2016-11-08 01:57:53'</font> <i>(length=19)</i>
+          'footer_show' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+          'form_id' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+          'open_page' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+          'link' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/classify/5.html'</font> <i>(length=16)</i>
+          'childmenu' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+      2 <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=23)</i>
+          'id' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>6</font>
+          'name' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'百度外链跳转'</font> <i>(length=18)</i>
+          'en_name' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'baidu'</font> <i>(length=5)</i>
+          'img' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/resources/images/1478570704SOB6.jpg'</font> <i>(length=36)</i>
+          'icon' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'icon-jj'</font> <i>(length=7)</i>
+          'meta_keywords' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'百度'</font> <i>(length=6)</i>
+          'meta_description' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'百度外链跳转！！！！'</font> <i>(length=30)</i>
+          'sort' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>5</font>
+          'type' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>6</font>
+          'article_type' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+          'page_id' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+          'pc_show' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+          'mobile_show' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+          'wechat_show' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+          'url' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'http://www.baidu.com'</font> <i>(length=20)</i>
+          'p_id' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+          'created_at' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'2016-11-08 02:05:25'</font> <i>(length=19)</i>
+          'updated_at' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'2016-11-08 02:05:25'</font> <i>(length=19)</i>
+          'footer_show' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+          'form_id' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+          'open_page' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>2</font>
+          'link' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'http://www.baidu.com'</font> <i>(length=20)</i>
+          'childmenu' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+  'foot_navs' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=2)</i>
+      0 <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=23)</i>
+          'id' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>6</font>
+          'name' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'百度外链跳转'</font> <i>(length=18)</i>
+          'en_name' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'baidu'</font> <i>(length=5)</i>
+          'img' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/resources/images/1478570704SOB6.jpg'</font> <i>(length=36)</i>
+          'icon' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'icon-jj'</font> <i>(length=7)</i>
+          'meta_keywords' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'百度'</font> <i>(length=6)</i>
+          'meta_description' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'百度外链跳转！！！！'</font> <i>(length=30)</i>
+          'sort' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>5</font>
+          'type' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>6</font>
+          'article_type' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+          'page_id' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+          'pc_show' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+          'mobile_show' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+          'wechat_show' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+          'url' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'http://www.baidu.com'</font> <i>(length=20)</i>
+          'p_id' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+          'created_at' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'2016-11-08 02:05:25'</font> <i>(length=19)</i>
+          'updated_at' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'2016-11-08 02:05:25'</font> <i>(length=19)</i>
+          'footer_show' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+          'form_id' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+          'open_page' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>2</font>
+          'link' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'http://www.baidu.com'</font> <i>(length=20)</i>
+          'childmenu' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+      1 <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=23)</i>
+          'id' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>5</font>
+          'name' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'关于我们'</font> <i>(length=12)</i>
+          'en_name' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'g'</font> <i>(length=1)</i>
+          'img' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/resources/images/1478510919vn7m.jpg'</font> <i>(length=36)</i>
+          'icon' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'icon-wenzhang'</font> <i>(length=13)</i>
+          'meta_keywords' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'关于我们'</font> <i>(length=12)</i>
+          'meta_description' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'美若黎明——李健'</font> <i>(length=24)</i>
+          'sort' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>4</font>
+          'type' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>4</font>
+          'article_type' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+          'page_id' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+          'pc_show' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+          'mobile_show' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+          'wechat_show' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+          'url' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>''</font> <i>(length=0)</i>
+          'p_id' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+          'created_at' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'2016-11-07 09:28:42'</font> <i>(length=19)</i>
+          'updated_at' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'2016-11-08 01:57:53'</font> <i>(length=19)</i>
+          'footer_show' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+          'form_id' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+          'open_page' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+          'link' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/classify/5.html'</font> <i>(length=16)</i>
+          'childmenu' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+  'keywords' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=1)</i>
+      0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'音乐之声'</font> <i>(length=12)</i>
+  'description' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=1)</i>
+      0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'音乐之声'</font> <i>(length=12)</i>
+  'logo' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=4)</i>
+      'img' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/resources/images/14785760341KWf.png'</font> <i>(length=36)</i>
+      'title' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'首页'</font> <i>(length=6)</i>
+      'url' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/'</font> <i>(length=1)</i>
+      'openway' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'1'</font> <i>(length=1)</i>
+  'imgs' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=2)</i>
+      0 <font color='#888a85'>=&gt;</font> 
+        <b>object</b>(<i>stdClass</i>)[<i>211</i>]
+          <i>public</i> 'img' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/resources/images/1478658026Vhfo.jpg'</font> <i>(length=36)</i>
+          <i>public</i> 'title' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'ming1'</font> <i>(length=5)</i>
+          <i>public</i> 'url' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'link1'</font> <i>(length=5)</i>
+          <i>public</i> 'openway' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'1'</font> <i>(length=1)</i>
+      1 <font color='#888a85'>=&gt;</font> 
+        <b>object</b>(<i>stdClass</i>)[<i>212</i>]
+          <i>public</i> 'img' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/resources/images/1478658026eQ4W.jpg'</font> <i>(length=36)</i>
+          <i>public</i> 'title' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'2'</font> <i>(length=1)</i>
+          <i>public</i> 'url' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'l2'</font> <i>(length=2)</i>
+          <i>public</i> 'openway' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'2'</font> <i>(length=1)</i>
+  'lb' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=23)</i>
+      'id' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+      'name' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'音乐列表'</font> <i>(length=12)</i>
+      'en_name' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'music'</font> <i>(length=5)</i>
+      'img' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/resources/images/1478510258n55M.jpg'</font> <i>(length=36)</i>
+      'icon' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'icon-sanyuan'</font> <i>(length=12)</i>
+      'meta_keywords' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'音乐'</font> <i>(length=6)</i>
+      'meta_description' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'音乐列表'</font> <i>(length=12)</i>
+      'sort' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+      'type' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+      'article_type' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+      'page_id' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+      'pc_show' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+      'mobile_show' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+      'wechat_show' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+      'url' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>''</font> <i>(length=0)</i>
+      'p_id' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+      'created_at' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'2016-11-07 09:14:54'</font> <i>(length=19)</i>
+      'updated_at' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'2016-11-07 09:17:43'</font> <i>(length=19)</i>
+      'footer_show' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+      'form_id' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+      'open_page' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+      'link' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/classify/1.html'</font> <i>(length=16)</i>
+      'childmenu' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=2)</i>
+          0 <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=23)</i>
+              ...
+          1 <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=23)</i>
+              ...
+  'favicon' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>''</font> <i>(length=0)</i>
+  'site_url' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>''</font> <i>(length=0)</i>
+  'classify' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=21)</i>
+      'id' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>2</font>
+      'name' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'歌星排序'</font> <i>(length=12)</i>
+      'en_name' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'s'</font> <i>(length=1)</i>
+      'img' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/resources/images/14785103904r3G.jpg'</font> <i>(length=36)</i>
+      'icon' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'icon-wangwang'</font> <i>(length=13)</i>
+      'meta_keywords' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'歌星'</font> <i>(length=6)</i>
+      'meta_description' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>''</font> <i>(length=0)</i>
+      'sort' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+      'type' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>3</font>
+      'article_type' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+      'page_id' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+      'pc_show' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+      'mobile_show' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+      'wechat_show' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+      'url' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>''</font> <i>(length=0)</i>
+      'p_id' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+      'created_at' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'2016-11-07 09:19:52'</font> <i>(length=19)</i>
+      'updated_at' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'2016-11-07 09:21:12'</font> <i>(length=19)</i>
+      'footer_show' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+      'form_id' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+      'open_page' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+</pre>

@@ -1,0 +1,134 @@
+<style type="text/css">
+    .setting ul li{
+        margin: 5px;
+        width: 45%;
+        float: left;
+    }
+    .setting label{
+        margin: 5px;
+    }
+    .setting button{
+        margin:5px;
+        min-width: 100px;
+    }
+    .setting .config_file{
+        position: absolute;
+        filter: alpha(opacity=0);
+        -moz-opacity: 0;
+        opacity: 0;
+        width: 120px;
+    }
+    .setting .cancel .fa-close:hover{
+        font-size:2em;
+        color: #a8a5a5;
+    }
+</style>
+<div class="setting">
+    <div class="panel panel-primary setting-main">
+        <div class="panel-heading">设置<small>(Setting)</small></div>
+        <div class="panel-body" id="setting_list">
+            <div class="form-group" style="width:100%;">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>数据别名</th>
+                            <th class="text-center">数据命名</th>
+                            <th class="text-center">类型限制</th>
+                            <th class="text-center">获取数据</th>
+                            <th class="text-center">页面</th>
+                            <th class="text-center">提示语</th>
+                            <th class="text-center">规则</th>
+                            <th class="text-center">操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+                <button class="btn btn-primary file_import" style="width:120px;"><input type="file" name="config_file" class="config_file" /><i class="fa fa-plus"></i> 文件导入显示</button>
+            </div>
+        </div>
+    </div>
+    <button class="btn btn-primary manage_setting_page"><i class="fa fa-plus"></i> 管理显示页面</button>
+    <div class="panel panel-primary setting-page" style="display: none;">
+        <div class="panel-heading">管理页面设置<small>(Massege Setting)</small><div class="cancel" style="float:right;"><i class="fa fa-lg fa-close"></i></div></div>
+        <div class="panel-body" id="page_setting_list">
+            <form class="navbar-form navbar-left page_form" style="width:100%;display: none;">
+                <div class="form-group" style="width:100%;">
+                    <ul class="nav" style="width:100%;" >
+                        <li><label>文件名 : </label> <input type="text" class="form-control filename" placeholder="请输入带扩展名文件名或者代号"/></li>
+                        <li><label>别名 : </label> <input type="text" class="form-control pagename" placeholder="请输入页面别名"/></li>
+                        <li><label>包含页面 : </label> <input type="text" class="form-control includepage" placeholder="用逗号隔开"/></li>
+                    </ul>
+                    <div class="text-center"><button class="btn btn-primary save"> 保 存</button><button class="btn btn-primary back_his"> 返 回</button></div>
+                </div>
+            </form>
+            <div class="list">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>别名</th>
+                            <th class="text-center">文件名</th>
+                            <th class="text-center">包含页面</th>
+                            <th class="text-center">操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+                <button class="btn btn-primary add_setting_page"><i class="fa fa-plus"></i> 添加显示页面</button><button class="btn btn-primary file_import" style="width:120px;"><input type="file" name="config_file" class="config_file" /><i class="fa fa-plus"></i> 文件导入显示</button><button class="btn btn-primary cancel_refresh"> 返 回</button>
+            </div>
+        </div>
+    </div>
+	<button class="btn btn-primary add_setting_commen"><i class="fa fa-plus"></i> 添加普通显示</button>
+	<div class="panel panel-primary setting-common" style="display: none;">
+		<div class="panel-heading">普通显示设置<small>(Common Setting)</small><div class="cancel" style="float:right;"><i class="fa fa-lg fa-close"></i></div></div>
+		<div class="panel-body" id="common_setting_list">
+			<form class="navbar-form navbar-left setting_cate_form" style="width:100%;">
+				<div class="form-group" style="width:100%;">
+					<ul class="nav" style="width:100%;" >
+						<li><label>数据别名 : </label> <input type="text" class="form-control datatitle" placeholder="请设置数据别名"/></li>
+						<li><label>数据命名 : </label> <input type="text" class="form-control dataname" placeholder="请设置名称与模板一致"/></li>
+						<li><label>类型限制 : </label> 
+							<select class="form-control type">
+								<option value="imgs">多图</option>
+								<option value="img">单图</option>
+								<option value="text">文本短输入</option>
+								<option value="textarea">文本长输入</option>
+							</select>
+						</li>
+						<li class="pagename_li"><label>页面 : </label> </li>
+						<li style="display:none;"><label>正则表达式 : </label>  <textarea class="form-control regular" placeholder='请填写限制规则(例:"C[0-9]{1,2}")'></textarea></li>
+						<li><label>提示语 : </label><textarea class="form-control promptword"></textarea></li>
+                                                <li class="getcontent_li"><label>提取内容 : </label> <input type="checkbox"  value="title"/>title <input type="checkbox" value="link"/>link <input type="checkbox" value="img"/>img <input type="checkbox" value="children"/>children </li>
+					</ul>
+					<div class="text-center"><button class="btn btn-primary save"> 保 存</button><button class="btn btn-primary cancel"> 取 消</button></div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	$(".setting .add_setting_commen").click(function(){
+		$(".setting .panel").hide();
+		$(".setting .setting-common").show();
+	});
+    $(".setting-common .type").change(function(){
+        var v=$(this).val();
+        if(v=="text"||v=="textarea"){
+            $(".setting-common .regular").parent("li").show();
+        }else{
+            $(".setting-common .regular").parent("li").hide();
+        }
+    });
+    $.ajax({
+        url: "json/homesetting.json",
+        async: false,
+        success: function(json) {
+            $.each(json, function(k, v) {
+                $.get("page/include_html/" + v.html, function(data) {
+                    $(".setting").append(data);
+                });
+            });
+        }
+    });
+</script>

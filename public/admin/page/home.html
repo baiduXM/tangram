@@ -1,0 +1,162 @@
+<style type="text/css">
+    .setting ul li{
+        margin: 10px;
+        /*width: 45%;*/
+        /*float: left;*/
+    }
+    .setting button{
+        margin:5px;
+        min-width: 100px;
+    }
+    .setting li{
+        margin: 5px;
+    }
+    .setting ul{
+        border: 1px solid #cfcfcf;
+        border-radius: 8px;
+        width: 95%;
+        position: relative;
+        left: 5%;
+        margin-bottom: 10px;
+    }
+    .setting hr{
+        margin-top: 5px;
+        margin-bottom: 20px;
+        border: 0;
+        border-top: 2px solid #cfcfcf;
+    }
+    .setting .bold{
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .setting .promptword{
+        color:#ff6666;
+    }
+    .setting .img-add-button{
+        width:100px;
+        height:100px;
+        display: inline;
+    }
+    .setting .img-add-button input{
+        position: absolute;
+        width: 56px;
+        height: 56px;
+        filter:alpha(opacity=0); 
+        -moz-opacity:0; 
+        opacity:0;
+        display: inline;
+    }
+    .setting .img-add-button i{
+        font-size:56px;
+        margin:5px;
+        color: #337AB7;
+        position: absolute;
+    }
+    .setting .imgpre{
+        width:100px;
+        height:56px;
+        margin-right: -10px;
+        margin-left: 10px;
+    }
+    .setting .imgclose{
+        height:100%;
+        font-size: 20px;
+        position: relative;
+        color: red;
+        top: -23px;
+        transform: rotate(0deg);
+        -moz-transition: rotate(0deg);
+        -webkit-transition:  rotate(0deg);
+        -o-transition: rotate(0deg);
+        transition:All 1s;
+        -moz-transition:All 1s;
+        -webkit-transition:All 1s;
+        -o-transition:All 1s;
+    }
+    .setting .imgclose:hover{
+        transform: rotate(360deg);
+        -moz-transition: rotate(360deg);
+        -webkit-transition:  rotate(360deg);
+        -o-transition: rotate(360deg);
+        cursor: pointer;
+    }
+    .setting .imgedit:hover{
+        color: rgba(255, 254, 254, 0.9);
+    }
+    .setting .imgedit{
+        font-size: 20px;
+        color: rgba(255, 254, 254, 0);
+        left: 50px;
+        position: absolute;
+        z-index: 1;
+        margin-top: 16px;
+    }
+    .setting .imgsort{
+        color:#337ab7;
+        font-size: 30px;
+        margin:5px;
+        position: relative;
+    }
+    .setting .imgsort:hover{
+        color:#61666b;
+        cursor: pointer;
+    }
+    .setting .error .form-control{
+        box-shadow: 0 0 5px red;
+        border: 3px red;
+    }
+    .setting .error .errorMsg{
+        font-size: 23px;
+        margin-left: 10px;
+        color: rgba(255, 0, 0, 0.5);
+        vertical-align: middle;
+        width: 30px;
+        height: 30px;
+        border: 2px solid rgba(255, 0, 0, 0.5);
+        display: inline-block;
+        border-radius: 15px;
+        text-align: center;
+    }
+    .setting .error .errorMsg:before{
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        content: "\f12a";
+    }
+</style>
+<div class="setting">
+    <div class="panel panel-primary select-control">
+        <div class="panel-heading">页面设置<small>(Page Setting)</small></div>
+        <div class="panel-body" id="page_setting">
+            <form class="navbar-form navbar-left" style="width:100%;">
+                <div class="form-group" style="width:100%;">
+                </div>
+                <div class="text-center"><button class="btn btn-primary save" disabled> 保 存</button><button class="btn btn-primary cancel">  <span>取 消</span></div>
+            </form>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $.ajax({
+        url: "json/home.json",
+        async: false,
+        success: function(json) {
+            $.each(json, function(k, v) {
+                if (typeof (v.html) != "undefined" && v.html != "") {
+                    $.get("page/include_html/" + v.html, function(data) {
+                        $(".setting").append(data);
+                    });
+                }
+                if (typeof (v.css) != "undefined" && v.css != "") {
+                    var link = document.createElement('link');
+                    link.type = 'text/css';
+                    link.rel = 'stylesheet';
+                    link.href = "page/include_css/" + v.css;
+                    document.getElementsByClassName("setting")[0].appendChild(link);
+                }
+            });
+        }
+    });
+</script>

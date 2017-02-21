@@ -1,0 +1,7 @@
+[{
+        "name": "留言板",
+        "en_name": "MessageManager",
+        "url": "#/message",
+        "dataurl": "message",
+        "icon": "fa-pencil-square"
+    }]

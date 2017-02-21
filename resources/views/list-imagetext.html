@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <script type="text/javascript">
+    // 跳转手机页面
+    {if $site_another_url}
+    if (!!navigator.userAgent.match(/AppleWebKit.*Mobile.*/)) {
+        parent.location.href = '{$site_another_url}';
+    } {/if}
+    </script>
+    
+    <meta http-equiv="x-ua-compatible" content="ie=7" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="{$keywords}" />
+    <meta name="description" content="{$description}" />
+    <link href="{$site_url}css/css.css" rel="stylesheet" type="text/css" />
+<script src="{$site_url}js/MSClass.js" type="text/javascript"></script>
+<script type="text/javascript" src="{$site_url}js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="http://common.mn.sina.com.cn/public/resource/lib/jquery.jcarousellite.js"></script>
+<script type="text/javascript" src="{$site_url}js/jquery.SuperSlide.2.1.js"></script>
+<script type="text/javascript" src="{$site_url}js/jquery.kinMaxShow-1.0.min.js"></script>
+<script type="text/javascript" src="{$site_url}js/function.js"></script>
+<script type="text/javascript" src="{$site_url}js/Marquee.js"></script>
+    <style>
+    .tx1 {
+        behavior: url(pie.htc);
+    }
+    </style>
+    <title>{$title}</title>
+</head>
+
+<body>
+    {include file='./_header.html'}
+    <div id="container" class="wrapper clearfix">
+        <div class="sidebar">
+            <div class="subnav">
+                {include file='./_pagenavs_sub3.html'}
+            </div>
+            <div id='contact'>
+                <div class="title">
+                    <div class="ch">联系方式</div>
+                    <div class="en"> CONTACT US</div>
+                </div>
+                {$global.contact_us}
+            </div>
+        </div>
+        <div class="main">
+            <div class="crumb">
+                <div class="ch">{$list.name}</div>
+                <div class="en">{$list.en_name}</div>
+                <span>当前位置：<a href="{$site_url}">首页</a>
+           {foreach item=nav from=$posnavs}
+             &gt; <a href="{$nav.link}">{$nav.name}</a>
+           {/foreach}</span>
+            </div>
+            <div class="article">
+                <div class="deteo">
+                    <div class="news_deta4">
+                        <ul>
+                            {foreach name=article item=article from=$list.data}
+                            <li>
+                                <div class="img">
+                                    <a href="{$article.link}"><img src="{$article.image}" /></a>
+                                </div>
+                                <div class="right_news">
+                                    <div class="nlist_a"><a href="{$article.link}"><b>{$article.pubdate} </b> {$article.title}</a></div>
+                                    <div class="nlist_word">
+                                        {$article.description} 
+                                    </div>
+                                    <span><a href="{$article.link}">[查看详情]</a></span>
+                                </div>
+                            </li>
+                            {/foreach}
+                        </ul>
+                        <div class="module_page">
+                            第{$page_links.current_page}页/共{$page_links.page_count} 页
+                            <a href="{$page_links.first_link}">首页</a>
+                            <a href="{$page_links.prev_link}">上一页</a> {foreach name=nears_link item=near_link key=near_page from=$page_links.nears_link} {if $near_page == $page_links.current_page}
+                            <a class="current">{$near_page}</a> {else}
+                            <a href="{$near_link}">{$near_page}</a> {/if} {/foreach}
+                            <a href="{$page_links.next_link}">下一页</a>
+                            <a href="{$page_links.last_link}">尾页</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {include file='./_footer.html'}
+</body>
+
+</html>

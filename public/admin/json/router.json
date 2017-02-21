@@ -1,0 +1,73 @@
+{
+    "default": {
+        "addmodule": {
+            "router": "addmodule",
+            "url": "/addmodule",
+            "templateUrl": "page/addmodule.html"
+        },
+        "module": {
+            "router": "module",
+            "url": "/module",
+            "jsurl": "page/js/module.js",
+            "templateUrl": "page/module.html",
+            "pagecontroller": "moduleController"
+        },
+        "index": {
+            "router": "index",
+            "url": "/index",
+            "templateUrl": "page/index.html"
+        }
+    },
+    "Upload": {
+        "1": {
+            "url": "/uploadsetting",
+            "router": "uploadsetting",
+            "templateUrl": "page/uploadsetting.html",
+            "jsurl": "page/js/uploadsetting.js",
+            "pagecontroller": "uploadsettingController"
+        }
+    },
+    "Home": {
+        "1": {
+            "url": "/home",
+            "router": "home",
+            "templateUrl": "page/home.html",
+            "jsurl": "page/js/home.js",
+            "pagecontroller": "homeController"
+        },
+        "2": {
+            "url": "/homesetting",
+            "router": "homesetting",
+            "templateUrl": "page/homesetting.html",
+            "jsurl": "page/js/homesetting.js",
+            "pagecontroller": "homesettingController"
+        }
+    },
+    "Classify": {
+        "1": {
+            "url": "/classify",
+            "router": "classify",
+            "templateUrl": "page/classify.html",
+            "jsurl": "page/js/classify.js",
+            "pagecontroller": "classifyController"
+        }
+    },
+    "Articles": {
+        "1": {
+            "url": "/article",
+            "router": "article",
+            "templateUrl": "page/article.html",
+            "jsurl": "page/js/article.js",
+            "pagecontroller": "articleController"
+        }
+    },
+    "Message": {
+        "1": {
+            "url": "/message",
+            "router": "message",
+            "templateUrl": "page/message_board.html",
+            "jsurl": "page/js/message_board.js",
+            "pagecontroller": "messageController"
+        }
+    }
+}

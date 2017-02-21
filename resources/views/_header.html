@@ -1,0 +1,47 @@
+<div id="header_bg"> 
+    <div id="header" class="wrapper">
+        <div id="logo"><img src="{$logo.img}" alt="{$logo.title}" /></div>
+        <div id="search">
+            <form action="{$search_action}" method="GET">
+                <input type="text" name="s" value="" class="sa" />
+                <input type="submit" class="bta" />
+            </form>
+        </div>
+        <div id="tel">{$telephone}</div>
+    </div>
+</div>
+
+<div id="nav_bg">
+    <div id="nav" class="wrapper">
+        <ul>
+            {$limit = 7}
+            {if $navs|count lt $limit}{$limit = $navs|count}{/if}
+            <li class="aa" style="width:{100/($limit+1)}%">
+                <a href="{$site_url}">首页</a>
+            </li>
+            {foreach name=navs item=nav from=$navs}
+            <li class="fl{if $nav.current} current{/if} aa" style="width:{100/($limit+1)}%">
+                <a href="{$nav.link}">{$nav.name}</a>
+                <ul class="sub clearfix">
+                    {if $nav.childmenu} {foreach key=key item=nav_list from=$nav.childmenu}
+                    <li class="{if $nav.current}current{/if} cc"><a href="{$nav_list.link}">{$nav_list.name}</a></li>
+                    {/foreach} {/if}
+                </ul>
+            </li>
+            {if $nav@index+1 eq $limit}{break}{/if}
+            {/foreach}
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+<div id="banner" class="wrapper">
+    <div id="kinMaxShow" style="display:none;"> 
+{foreach name=slidepics item=slidepic from=$slidepics}
+      <div> <a href="{$slidepic.url}" target="_blank"><img src="{$slidepic.img}" alt="{$slidepic.title}"  /></a></div>
+      {/foreach} </div>
+</div>
